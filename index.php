@@ -1,3 +1,34 @@
+<?php
+$usr= $_GET['usuario'];
+$pass= $_GET['contraseña'];
+$usrValido=false;
+$PassValido=false;
+/*declaramos los arrgloes usuarios y passwords*/
+$usuarios=array("kary", "path", "Rich", "Pamela", "Alex", "Monica", "Perla",
+"uriel", "aura", "Alejandra", "zuave", "RCTORR");
+$passwords=array("ko123ri", "00012path", "ric577152", "P-12345", "Juanson12",
+ "M1234nk", "5c5unodos3", "Brauriel2", "10AVr2", "Aleeli-03", "Z1986zu", "12357Tor");
+
+ foreach ($usuarios as &$valor) {
+
+     if($valor==$usr){
+        foreach($passwords as &$valor2){
+          if($valor2==$pass){
+            $usrValido=true;
+            $PassValido=true;
+            break;
+          }else{
+            $PassValido=false;
+          }
+        }
+        break;
+      }
+     else{
+       $usrValido=false;
+     }
+   }
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,19 +39,13 @@
 <body>
   <header>TDW 2.0</header>
   <div id="login"><!--  login -->
-   <form action="index.php" method="GET" >
-          <h1>Registro de Asistencia</h1>
-            <!-- recuadros txt-->
-    <input  type="text" placeholder="Escribe tu usuario" name="usuario" required />
-    <input id="pass" type="password" placeholder="Escribe tu contraseña " name="contraseña" required onkeyup="valida()"/>
-      <div id=msj>
-      </div><!--Termina id msj-->
-        <!-- botones-->
-    <button id="ingresar" type="submit" ><h2>Registrar</h2></button>
-
-
-   </form>
-
+  <?php
+  if($usrValido && $PassValido){
+    include('registro.php');
+  }else{
+    include('usuario-incorrecto.html');//aca va la parte de Suave
+  }
+  ?>
  </div><!--Termina div login-->
   <footer>Padas</footer>
 </body>
