@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+}
+footer{
+      background-color: #339999;
+      /*background-color: #187575;*/
+      text-align: center;
+      font-family: Helvetica;
+      font-size: 1.5em;
+      color: #FFF;
+      width: 99%;
+      height:2.2em;
+      padding: 1% 2%;
+      margin: 1% auto;
+      bottom: 0;
+      position: absolute;
+    /*  ms-box-shadow:  0px 4px 0px #000;
+      -moz-box-shadow:  0px 4px 0px #000;
+      -webkit-box-shadow:  0px 4px 0px #000;
+      -o-box-shadow:  0px 4px 0px #000;
+      box-shadow:  0px 4px 0px #000;
+      */
+}
+  header{
+        background-color: #339999;
+        /*background-color: #187575; */
+        text-align: left;
+        font-size: 1.5em;
+        font-family: Helvetica;
+        color: #FFF;
+        top: 0px;
+        width: 100%;
+        height:2.2em;
+        padding: 1% 2%;*/
+        /*  -ms-box-shadow:  0px 4px 0px #000;
+          -moz-box-shadow:  0px 4px 0px #000;
+          -webkit-box-shadow:  0px 4px 0px #000;
+          -o-box-shadow:  0px 4px 0px #000;
+          box-shadow:  0px 4px 0px #000;*/
+}
+
+
+
+#login {
+    background-color: #CEF6EC;/*#A9F5E1*/
+    width: 25%;
+    padding: 1%;
+    margin: 7% auto;
+    border: thin solid #399;
+    /*border-radius: 8px;*/
+    /*box-shadow:inset  0px 0px 10px #000;*/
+}
+
+
+
+
+
+
+
+
+form input {
+    width: 60%;
+    height: 20px;
+    margin: 1% 20%;
+    font-size: 15px;
+    color: #6E6E6E;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+form button {
+    background-color: #187575;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+    width: 40%;
+    height: 30px;
+    margin: 5% 30%;
+    border: none;
+    /*border-radius: 7px;*/
+    /*box-shadow: 0px 2px 0px;*/
+}
+
+form button:hover {
+    background-color: rgba(57, 139, 108, 0.95);
+}
+
+form h1{
+    font-family: Helvetica;
+    color: #585858;
+    text-align:  center;
+    font-size: 200%;
+}
+
+/*--   texto "ingresar" ---*/
+form h2{
+   font-family: Helvetica;
+   color: aliceblue;
+   text-align: center;
+   font-size: 50%;
+
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+                    inicia login-incorrecto.html
+//////////////////////////////////////////////////////////////////*/
+
+a {
+
+    text-decoration: none;
+    color:#fff;
+    font-family: Helvetica;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40%;
+
+}
+/*width: 60%;
+height: 20px;
+margin: 1% 20%;
+
+color: #6E6E6E;
+text-align: center;
+border-radius: 5px;*/
+
+
+.error  {
+    color: #339999;
+    font-size: 28px;
+    text-align: center;
+    padding: 15px 2%; /* 15px/960 = 0.015 => 1.5% redondeando a 2% */
+    /*background-color: #fcb316;*/
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /*border-radius: 12px;*/
+
+    }
+
+#contenido_incorrecto {
+  background-color: #CEF6EC;/*#A9F5E1*/
+  font-family: Helvetica;
+  width: 25%;
+  padding: 1%;
+  margin: 7% auto;
+  border: thin solid #399;
+}
+
+#mensaje_incorrecto {
+    text-align: center;
+
+
+}
+
+
+#reintentar {
+  background-color: #187575;
+  border: none;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 20px;
+  padding: 2% 2%;
+  text-align: center;
+  width: 40%;
+  height: 30px;
+  margin: 5% 30%;
+}
